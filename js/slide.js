@@ -1,0 +1,34 @@
+/*https://www.youtube.com/watch?v=JbXLkhIfSTQ*/
+/*https://github.com/OwlCarousel2/OwlCarousel2/tree/develop/docs/assets/owlcarousel*/
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    margin:10,
+    loop:false,
+    autoWidth:true,
+    responsive:{
+      0:{
+        items:1,
+      },
+      485:{
+        items:2,
+      },
+      728:{
+        items:3,
+      },
+      960:{
+        items:4,
+      },
+      1200:{
+        items:4,
+      },
+    }
+});
+  $('.owl-carousel').on('mousewheel','owl-stage',(e)=>{
+    if (e.deltaY>0) {
+      $('.owl-carousel').trigger('next.owl');
+    } else {
+      $('.owl-carousel').trigger('prev.owl');
+    }
+    e.preventDefault();
+  });
+});
