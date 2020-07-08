@@ -1,2 +1,22 @@
 /*https://www.youtube.com/watch?v=JbXLkhIfSTQ*/
 /*https://github.com/OwlCarousel2/OwlCarousel2/tree/develop/docs/assets/owlcarousel*/
+.male>p:before{
+position: absolute;
+content: url(./../img/male.png);
+left:0;
+}
+.female>p:before{
+position: absolute;
+content: url(./../img/female.png);
+left:0;
+}
+.family>p:before{
+position: absolute;
+content: url(./../img/family.png);
+left:0;
+}
+.time>p:before{
+position: absolute;
+content: url(./../img/time.png);
+left:0;
+}
