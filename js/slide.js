@@ -1,7 +1,7 @@
 /*https://www.youtube.com/watch?v=JbXLkhIfSTQ*/
 /*https://github.com/OwlCarousel2/OwlCarousel2/tree/develop/docs/assets/owlcarousel*/
 $(document).ready(function(){
-  $('.owl-carousel').owlCarousel({
+  $('.owl-carousel#service').owlCarousel({
     margin:10,
     loop:false,
     autoWidth:true,
@@ -23,7 +23,7 @@ $(document).ready(function(){
       },
     }
 });
-  $('.owl-carousel').on('mousewheel','owl-stage',(e)=>{
+  $('.owl-carousel#service').on('mousewheel','owl-stage',(e)=>{
     if (e.deltaY>0) {
       $('.owl-carousel').trigger('next.owl');
     } else {
@@ -31,4 +31,22 @@ $(document).ready(function(){
     }
     e.preventDefault();
   });
+
+
+
+
+
+
+  $('.owl-carousel#reports').owlCarousel({
+    margin:10,
+    loop:true,
+    autoWidth:true,
+    items:3,
+    autoplay : true,
+    center: true,
+    video:true,
+  });
+
+
+
 });

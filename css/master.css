@@ -33,3 +33,9 @@ left:0;
   font-weight: bold;
 
 }
+/*update consult-section,add report-section*/
+.consult-bg{
+  background-image: url(./../img/consult.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
