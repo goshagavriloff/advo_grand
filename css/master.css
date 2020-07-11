@@ -39,3 +39,50 @@ left:0;
   background-repeat: no-repeat;
   background-size: cover;
 }
+/*update report-seciton,add sponsors-section*/
+
+div#reports > div.owl-nav >button.owl-prev,
+div#reports > div.owl-nav >button.owl-next,
+div#sponsors > div.owl-nav >button.owl-prev,
+div#sponsors > div.owl-nav >button.owl-next
+ {
+        width: 5em;
+        height: 100%;
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+        display: block !important;
+        border:0px solid black;
+    }
+
+div#reports > div.owl-nav >button.owl-prev,
+div#sponsors > div.owl-nav >button.owl-prev
+{ left: -5em; }
+
+div#reports > div.owl-nav >button.owl-next,
+div#sponsors > div.owl-nav >button.owl-next
+ { right: -5em; }
+
+div#reports > div.owl-nav >button.owl-prev i,
+div#reports > div.owl-nav >button.owl-next i,
+div#sponsors > div.owl-nav >button.owl-prev i,
+div#sponsors > div.owl-nav >button.owl-next i
+{ color: black;font-weight: bold;font-size: 2em;}
+
+div#reports > div.owl-nav >button:hover,
+div#sponsors > div.owl-nav >button:hover
+{
+  background: transparent !important;
+}
+#sponsors div.card-body >div{
+  position:absolute;
+  display:none;
+  height: 100%;
+  top:0;
+  opacity:0.8;
+
+
+}
+#sponsors div.card-body:hover >div{
+display: block;
+}

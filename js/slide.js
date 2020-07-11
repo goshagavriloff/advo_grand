@@ -45,8 +45,22 @@ $(document).ready(function(){
     autoplay : true,
     center: true,
     video:true,
+    nav: true,
+    navText : ['<i class="fa fa-angle-left" aria-hidden="true">←</i>','<i class="fa fa-angle-right" aria-hidden="true">→</i>'],
+
   });
 
+
+  $('.owl-carousel#sponsors').owlCarousel({
+    margin:10,
+    loop:true,
+    autoWidth:true,
+    items:3,
+    autoplay : true,
+    nav: true,
+    navText : ['<i class="fa fa-angle-left" aria-hidden="true">←</i>','<i class="fa fa-angle-right" aria-hidden="true">→</i>'],
+
+  });
 
 
 });
